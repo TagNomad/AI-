@@ -1,0 +1,36 @@
+智能驾驶安全监测系统 v3.0 - 使用说明
+================================================
+
+【快速启动】
+1. 双击 "运行简化版.bat" 文件
+2. 如果出现错误，请按照提示安装缺少的库
+3. 确保模型文件存在于 runs 文件夹中
+
+【文件说明】
+- DrowsinessDetector_modern.py    : 完整版程序（需要所有依赖）
+- DrowsinessDetector_simple.py    : 简化版程序（自动检测依赖）
+- 启动疲劳检测系统.bat           : 运行完整版的批处理文件
+- 运行简化版.bat                 : 运行简化版的批处理文件
+- test_basic.py                  : 基础测试程序
+- config.py                      : 配置文件
+- README_运行说明.md             : 详细说明文档
+
+【依赖库安装】
+如果程序提示缺少依赖库，请在命令提示符中运行：
+pip install opencv-python ultralytics pillow numpy requests
+
+【模型文件】
+确保以下文件存在：
+- runs/detecteye/train/weights/best.pt
+- runs/detectyawn/train/weights/best.pt
+
+【故障排除】
+1. 如果Python未找到：确保Python已安装并添加到PATH
+2. 如果依赖库缺失：运行上述pip install命令
+3. 如果模型文件缺失：检查runs文件夹结构
+4. 如果摄像头无法打开：检查摄像头连接和权限
+
+【联系支持】
+如有问题，请查看开发日志.md文件获取详细技术信息。
+
+最后更新：2024年 
